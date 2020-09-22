@@ -42,8 +42,6 @@ You're done installing and enabling Hype zText
 
 Latest version can be linked into your project using the following in the head section of your project:
 
-**Version with IDE-Preview:**
-
 ```html
 <script src="https://cdn.jsdelivr.net/gh/worldoptimizer/HypezText/zTextHypeEdition.min.js"></script>
 ```
