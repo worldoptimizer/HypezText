@@ -18,7 +18,7 @@
 This step is effortless if you use the CDN version mentioned at the end of this document. Just copy and paste the following line into your Head HTML:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/worldoptimizer/HypezText@1/zTextHypeEdition.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/worldoptimizer/HypezText/zTextHypeEdition.min.js"></script>
 ```
 
 ### Enable Hype zText
@@ -45,7 +45,7 @@ Latest version can be linked into your project using the following in the head s
 **Version with IDE-Preview:**
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/worldoptimizer/HypezText@1/zTextHypeEdition.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/worldoptimizer/HypezText/zTextHypeEdition.min.js"></script>
 ```
 
 Optionally you can also link a SRI version or specific releases. 
