@@ -22,7 +22,7 @@ This step is effortless if you use the CDN version mentioned at the end of this 
 ```
 
 ### Enable Hype zText
-Just add a `data-z` attribute to a text element in the identity Additional Attributes panel. Even thought this already does the trick you would probally would use some CSS to style the additional copies made by zTextify. A quick way would be to style the added layers a little less brght by adding the follwing style-block to your Head HTML:
+Just add a `data-z` attribute to a text element in the identity Additional Attributes panel. Even thought this already does the trick you would probably use some CSS to style the additional copies made by zTextify. A quick way would be to style the added layers a little darker by adding the following style-block to your Head HTML:
 
 ```html
 <style>
@@ -35,8 +35,11 @@ Just add a `data-z` attribute to a text element in the identity Additional Attri
 ### Further information can be found here:
 https://bennettfeely.com/ztext/
 
-
 You're done installing and enabling Hype zText
+
+### Differences in this Fork to the original
+
+You can read all about the options on the [ztext.js](https://bennettfeely.com/ztext/) documentation and this fork should work accordingly. Specially the `dataset` attributes are the same. When it comes to the JavaScript side of things you have some differences and additions. In this fork`ZTextify` is `hypeDocument.zTextify` and `zDraw` is referenced as `hypeDocument.zDraw` . These commands have been moved to the Hype document scope to limit refresh and callback handling. Also, there is an option in `hypeDocument.zDraw` to purge the innerHTML cache introduced in this fork called `purgeCache` and if set to `true` it will refetch innerHTML to redraw the 3D text. This requires you to generated and define the innerHTML just before purging it. If you only want to set a new text string or avoid potential recursions when setting new content, there is an even simpler option in this fork. Just set a key called`innerHTML` in the options to whatever you want it to be when using `zDraw` to redraw.
 
 
 ---
