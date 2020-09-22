@@ -22,7 +22,15 @@ This step is effortless if you use the CDN version mentioned at the end of this 
 ```
 
 ### Enable Hype zText
-Just add a `data-z` attribute to a text element in the identity Additional Attributes panel.
+Just add a `data-z` attribute to a text element in the identity Additional Attributes panel. Even thought this already does the trick you would probally would use some CSS to style the additional copies made by zTextify. A quick way would be to style the added layers a little less brght by adding the follwing style-block to your Head HTML:
+
+```html
+<style>
+	.z-layer:not(:first-child) {
+		filter: brightness(0.7);
+	}
+</style>
+```
 
 ### Further information can be found here:
 https://bennettfeely.com/ztext/
