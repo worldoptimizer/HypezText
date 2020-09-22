@@ -28,7 +28,7 @@ Just add a `data-z` attribute to a text element in the identity Additional Attri
 https://bennettfeely.com/ztext/
 
 
-You're done installing and enebaling Hype zText
+You're done installing and enabling Hype zText
 
 
 ---
